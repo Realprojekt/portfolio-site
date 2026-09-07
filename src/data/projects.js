@@ -14,4 +14,19 @@ export const projects = [
         'Webbasiertes Lizenzmanagement-System, das automatisch die Lizenzen eines Unternehmens überwacht und zuständige Mitarbeitende rechtzeitig über anstehende Verlängerungen, Archivierung oder den Ablauf benachrichtigt. Entwickelt als Abschlussprojekt und im produktiven Einsatz.',
     },
   },
+  {
+    title: 'Portfolio Website',
+    tech: ['React', 'Vite', 'Custom i18n', 'Vercel'],
+    repoUrl: 'https://github.com/Realprojekt/portfolio-site',
+    demoUrl: 'https://portfolio-site-oeltjen.vercel.app',
+    highlight: false,
+    en: {
+      description:
+        'This site itself. A bilingual (DE/EN) React and Vite app with a custom i18n system, WCAG-compliant accessibility (skip links, focus states, verified contrast ratios), GDPR-compliant legal pages, and automatic CI deployment via Vercel.',
+    },
+    de: {
+      description:
+        'Diese Website selbst. Eine zweisprachige (DE/EN) React- und Vite-Anwendung mit eigenem i18n-System, barrierefreier Umsetzung nach WCAG (Skip-Links, Fokuszustände, geprüfte Kontrastwerte), DSGVO-konformen rechtlichen Seiten und automatischem CI-Deployment über Vercel.',
+    },
+  },
 ]
