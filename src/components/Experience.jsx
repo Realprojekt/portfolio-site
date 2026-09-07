@@ -13,7 +13,18 @@ export default function Experience({ experience, education }) {
             <span className="timeline-period">{job.period[lang]}</span>
             <div>
               <h3 className="timeline-role">{job[lang].role}</h3>
-              <span className="timeline-company">{job.company}</span>
+              {job.companyUrl ? (
+                <a
+                  className="timeline-company"
+                  href={job.companyUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {job.company}
+                </a>
+              ) : (
+                <span className="timeline-company">{job.company}</span>
+              )}
               <ul>
                 {job[lang].points.map((point, i) => (
                   <li key={i}>{point}</li>
