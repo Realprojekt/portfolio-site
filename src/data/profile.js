@@ -5,7 +5,7 @@ export const profile = {
     de: 'Recklinghausen, Deutschland',
   },
   email: 'Denizoeltjen@icloud.com',
-  resumeUrl: '/resume.pdf',
+  resumeUrl: null,
   social: [
     { label: 'GitHub', href: 'https://github.com/Realprojekt' },
     { label: 'LinkedIn', href: 'https://www.linkedin.com/in/deniz-oeltjen/' },

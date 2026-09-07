@@ -36,6 +36,10 @@ export const translations = {
       liveDemo: 'Live Demo',
     },
     langSwitch: 'Switch to German',
+    theme: {
+      toDark: 'Switch to dark mode',
+      toLight: 'Switch to light mode',
+    },
   },
   de: {
     nav: {
@@ -74,5 +78,9 @@ export const translations = {
       liveDemo: 'Live-Demo',
     },
     langSwitch: 'Switch to English',
+    theme: {
+      toDark: 'Zum dunklen Modus wechseln',
+      toLight: 'Zum hellen Modus wechseln',
+    },
   },
 }

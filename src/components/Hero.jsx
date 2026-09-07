@@ -11,9 +11,11 @@ export default function Hero({ profile }) {
       <p className="hero-subtitle">{content.tagline}</p>
       <div className="hero-actions">
         <a className="btn btn-primary" href="#projects">{t.hero.viewProjects}</a>
-        <a className="btn btn-secondary" href={profile.resumeUrl} target="_blank" rel="noreferrer">
-          {t.hero.downloadResume}
-        </a>
+        {profile.resumeUrl && (
+          <a className="btn btn-secondary" href={profile.resumeUrl} target="_blank" rel="noreferrer">
+            {t.hero.downloadResume}
+          </a>
+        )}
         <a className="btn btn-secondary" href="#contact">{t.hero.getInTouch}</a>
       </div>
     </section>
