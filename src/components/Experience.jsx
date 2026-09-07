@@ -9,8 +9,8 @@ export default function Experience({ experience, education }) {
       <h2 className="section-title">{t.titles.experience}</h2>
       <div className="timeline">
         {experience.map((job) => (
-          <div className="timeline-item" key={job.company + job.period}>
-            <span className="timeline-period">{job.period}</span>
+          <div className="timeline-item" key={job.company}>
+            <span className="timeline-period">{job.period[lang]}</span>
             <div>
               <h3 className="timeline-role">{job[lang].role}</h3>
               <span className="timeline-company">{job.company}</span>
@@ -28,7 +28,7 @@ export default function Experience({ experience, education }) {
         <div className="education-item">
           {education.map((ed) => (
             <div className="timeline-item" key={ed.school}>
-              <span className="timeline-period">{ed.period}</span>
+              <span className="timeline-period">{ed.period[lang]}</span>
               <div>
                 <h3 className="timeline-role">{ed[lang].degree}</h3>
                 <span className="timeline-company">{ed.school}</span>

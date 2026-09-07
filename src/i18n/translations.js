@@ -67,7 +67,7 @@ export const translations = {
       contact: 'Lassen Sie uns zusammenarbeiten.',
     },
     contactText:
-      'Ich bin aktuell offen für neue Möglichkeiten. Ob Frage oder einfach nur ein Hallo – mein Postfach ist immer offen.',
+      'Ich bin aktuell offen für neue Möglichkeiten. Ob Frage oder einfach nur ein Hallo, mein Postfach ist immer offen.',
     buttons: {
       sayHello: 'Hallo sagen',
       code: 'Code',

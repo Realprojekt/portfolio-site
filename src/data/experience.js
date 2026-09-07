@@ -1,11 +1,11 @@
 export const experience = [
   {
     company: 'Fraunhofer-Institut für Materialfluss und Logistik (IML)',
-    period: 'Aug 2023 — Jun 2026',
+    period: { en: 'Aug 2023 to Jun 2026', de: 'Aug 2023 bis Jun 2026' },
     en: {
-      role: 'IT Specialist Trainee – Application Development',
+      role: 'IT Specialist Trainee (Application Development)',
       points: [
-        'Developed a full-stack license management system as graduation project – automated license monitoring with notification system, built with Python, PostgreSQL, REST APIs, React and TypeScript.',
+        'Developed a full-stack license management system as a graduation project. It automates license monitoring with a notification system, built with Python, PostgreSQL, REST APIs, React and TypeScript.',
         'Set up and configured Linux servers independently in a professional research environment.',
         'Developed and maintained web applications, working across the full stack with modern frameworks and tools.',
       ],
@@ -13,7 +13,7 @@ export const experience = [
     de: {
       role: 'Auszubildender Fachinformatiker Anwendungsentwicklung',
       points: [
-        'Entwicklung eines Full-Stack-Lizenzmanagement-Systems als Abschlussprojekt – automatisierte Lizenzüberwachung mit Benachrichtigungssystem, umgesetzt mit Python, PostgreSQL, REST APIs, React und TypeScript.',
+        'Entwicklung eines Full-Stack-Lizenzmanagement-Systems als Abschlussprojekt. Es automatisiert die Lizenzüberwachung mit einem Benachrichtigungssystem, umgesetzt mit Python, PostgreSQL, REST APIs, React und TypeScript.',
         'Eigenständige Einrichtung und Konfiguration von Linux-Servern in einem professionellen Forschungsumfeld.',
         'Entwicklung und Wartung von Webanwendungen im gesamten Stack mit modernen Frameworks und Tools.',
       ],
@@ -21,7 +21,7 @@ export const experience = [
   },
   {
     company: 'REWE Kramer',
-    period: '2019 — 2023',
+    period: { en: '2019 to 2023', de: '2019 bis 2023' },
     en: {
       role: 'Part-time Retail Employee',
       points: [
@@ -42,9 +42,9 @@ export const experience = [
 export const education = [
   {
     school: 'Heinz-Nixdorf-Berufskolleg & Fraunhofer Institut IML',
-    period: '2023 — 2026',
+    period: { en: '2023 to 2026', de: '2023 bis 2026' },
     en: {
-      degree: 'Certified IT Specialist – Application Development (Fachinformatiker Anwendungsentwicklung)',
+      degree: 'Certified IT Specialist for Application Development (Fachinformatiker Anwendungsentwicklung)',
     },
     de: {
       degree: 'Fachinformatiker Anwendungsentwicklung',
@@ -52,7 +52,7 @@ export const education = [
   },
   {
     school: 'Gustav-Heinemann-Gesamtschule Dortmund',
-    period: '2020 — 2023',
+    period: { en: '2020 to 2023', de: '2020 bis 2023' },
     en: {
       degree: 'General Higher Education Entrance Qualification (Abitur)',
     },
