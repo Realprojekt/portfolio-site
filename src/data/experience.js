@@ -1,6 +1,7 @@
 export const experience = [
   {
     company: 'Fraunhofer-Institut für Materialfluss und Logistik (IML)',
+    companyUrl: 'https://www.iml.fraunhofer.de/de/abteilungen/b1/software_engineering.html',
     period: { en: 'Aug 2023 to Jun 2026', de: 'Aug 2023 bis Jun 2026' },
     en: {
       role: 'IT Specialist Trainee (Application Development)',

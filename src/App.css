@@ -322,6 +322,10 @@
   display: block;
 }
 
+a.timeline-company:hover {
+  text-decoration: underline;
+}
+
 .timeline-item ul {
   display: flex;
   flex-direction: column;
