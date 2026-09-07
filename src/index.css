@@ -1,0 +1,80 @@
+:root {
+  --bg: #fafaf8;
+  --bg-alt: #f2f1ee;
+  --surface: #ffffff;
+  --border: #e6e4df;
+  --text: #1c1c1a;
+  --text-muted: #5c5b56;
+  --accent: #3d4bf5;
+  --accent-contrast: #ffffff;
+  --radius: 10px;
+  --max-width: 920px;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SFMono-Regular', monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111113;
+    --bg-alt: #17171a;
+    --surface: #1a1a1d;
+    --border: #2a2a2e;
+    --text: #f1f0ed;
+    --text-muted: #a3a29c;
+    --accent: #7c85ff;
+    --accent-contrast: #0b0b0d;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  font-weight: 700;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-contrast);
+}
