@@ -15,13 +15,16 @@ import { experience, education } from './data/experience'
 function App() {
   return (
     <>
+      <a className="skip-link" href="#main">Skip to content</a>
       <Nav name={profile.name} />
-      <Hero profile={profile} />
-      <About profile={profile} />
-      <Skills skillGroups={skillGroups} />
-      <Projects projects={projects} />
-      <Experience experience={experience} education={education} />
-      <Contact profile={profile} />
+      <main id="main">
+        <Hero profile={profile} />
+        <About profile={profile} />
+        <Skills skillGroups={skillGroups} />
+        <Projects projects={projects} />
+        <Experience experience={experience} education={education} />
+        <Contact profile={profile} />
+      </main>
       <Footer profile={profile} />
     </>
   )

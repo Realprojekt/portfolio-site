@@ -11,7 +11,7 @@ export default function Nav({ name }) {
     <header className="nav">
       <div className="nav-inner">
         <a className="nav-brand" href="#top">{name}</a>
-        <nav className="nav-links">
+        <nav className="nav-links" aria-label="Primary">
           {links.map((link) => (
             <a key={link.href} href={link.href}>{link.label}</a>
           ))}
