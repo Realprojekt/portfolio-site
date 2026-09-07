@@ -6,6 +6,8 @@ export default function Footer({ profile }) {
         {profile.social.map((s) => (
           <a key={s.label} href={s.href} target="_blank" rel="noreferrer">{s.label}</a>
         ))}
+        <a href="/impressum.html">Impressum</a>
+        <a href="/datenschutz.html">Datenschutz</a>
       </div>
     </footer>
   )
