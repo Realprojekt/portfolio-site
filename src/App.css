@@ -401,11 +401,17 @@ a.timeline-company:hover {
   padding: 64px 24px 96px;
 }
 
+.legal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+}
+
 .legal-back {
   display: inline-block;
   font-size: 14px;
   color: var(--accent);
-  margin-bottom: 32px;
 }
 
 .legal-page h1 {
