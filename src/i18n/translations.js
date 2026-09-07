@@ -67,7 +67,7 @@ export const translations = {
       about: 'Über mich',
       skills: 'Womit ich arbeite',
       projects: 'Was ich gebaut habe',
-      experience: 'Werdegang',
+      experience: 'Wo ich gearbeitet habe',
       contact: 'Lassen Sie uns zusammenarbeiten.',
     },
     contactText:
