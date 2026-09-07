@@ -22,7 +22,7 @@ export const experience = [
   },
   {
     company: 'REWE Kramer',
-    period: { en: '2019 to 2023', de: '2019 bis 2023' },
+    period: { en: 'Aug 2019 to Jul 2023', de: 'Aug 2019 bis Jul 2023' },
     en: {
       role: 'Part-time Retail Employee',
       points: [
@@ -43,7 +43,7 @@ export const experience = [
 export const education = [
   {
     school: 'Heinz-Nixdorf-Berufskolleg & Fraunhofer Institut IML',
-    period: { en: '2023 to 2026', de: '2023 bis 2026' },
+    period: { en: 'Aug 2023 to Jun 2026', de: 'Aug 2023 bis Jun 2026' },
     en: {
       degree: 'Certified IT Specialist for Application Development (Fachinformatiker Anwendungsentwicklung)',
     },
@@ -53,7 +53,7 @@ export const education = [
   },
   {
     school: 'Gustav-Heinemann-Gesamtschule Dortmund',
-    period: { en: '2020 to 2023', de: '2020 bis 2023' },
+    period: { en: 'Aug 2020 to May 2023', de: 'Aug 2020 bis Mai 2023' },
     en: {
       degree: 'General Higher Education Entrance Qualification (Abitur)',
     },
