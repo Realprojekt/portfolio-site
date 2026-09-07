@@ -8,10 +8,19 @@
     <title>Impressum · Deniz Marian Oeltjen</title>
     <link rel="stylesheet" href="/src/index.css" />
     <link rel="stylesheet" href="/src/App.css" />
+    <script type="module" src="/src/theme/legal-page-theme.js"></script>
   </head>
   <body>
     <div class="legal-page container">
-      <a class="legal-back" href="/">← Back to portfolio</a>
+      <div class="legal-header">
+        <a class="legal-back" href="/">← Back to portfolio</a>
+        <button
+          type="button"
+          class="theme-toggle"
+          data-theme-toggle
+          aria-label="Zum dunklen Modus wechseln"
+        ></button>
+      </div>
       <h1>Impressum</h1>
       <span class="legal-updated">Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)</span>
 
