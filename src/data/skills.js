@@ -1,18 +1,18 @@
 export const skillGroups = [
   {
-    category: 'Languages',
-    items: ['JavaScript', 'TypeScript', 'Python', 'Java', 'SQL'],
+    category: { en: 'Languages', de: 'Sprachen' },
+    items: ['Python', 'TypeScript', 'Java', 'SQL', 'JavaScript'],
   },
   {
-    category: 'Frontend',
-    items: ['React', 'HTML/CSS', 'Vite', 'Redux', 'Tailwind CSS'],
+    category: { en: 'Frontend', de: 'Frontend' },
+    items: ['React', 'HTML/CSS', 'TypeScript'],
   },
   {
-    category: 'Backend',
-    items: ['Node.js', 'Express', 'REST APIs', 'PostgreSQL', 'MongoDB'],
+    category: { en: 'Backend', de: 'Backend' },
+    items: ['REST APIs', 'PostgreSQL', 'SQLite', 'Linux'],
   },
   {
-    category: 'Tools & Practices',
-    items: ['Git', 'Docker', 'CI/CD', 'Testing (Jest/Vitest)', 'Agile'],
+    category: { en: 'Tools & Practices', de: 'Tools & Praktiken' },
+    items: ['Git', 'Docker', 'CI/CD', 'Linux Server Administration'],
   },
 ]

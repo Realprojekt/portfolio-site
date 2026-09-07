@@ -1,14 +1,15 @@
+import { useLanguage } from '../i18n/LanguageContext'
+
 export default function Contact({ profile }) {
+  const { t } = useLanguage()
+
   return (
     <section className="section container" id="contact">
-      <span className="section-label">05 · Contact</span>
-      <h2 className="contact-title">Let's work together.</h2>
-      <p className="contact-text">
-        I'm currently open to new opportunities. Whether you have a question or just want to say hi,
-        my inbox is always open.
-      </p>
+      <span className="section-label">{t.section.contact}</span>
+      <h2 className="contact-title">{t.titles.contact}</h2>
+      <p className="contact-text">{t.contactText}</p>
       <div className="contact-actions">
-        <a className="btn btn-primary" href={`mailto:${profile.email}`}>Say Hello</a>
+        <a className="btn btn-primary" href={`mailto:${profile.email}`}>{t.buttons.sayHello}</a>
         {profile.social
           .filter((s) => s.label !== 'Email')
           .map((s) => (

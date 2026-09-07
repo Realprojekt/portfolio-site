@@ -1,17 +1,21 @@
+import { useLanguage } from '../i18n/LanguageContext'
+
 export default function Experience({ experience, education }) {
+  const { lang, t } = useLanguage()
+
   return (
     <section className="section container" id="experience">
-      <span className="section-label">04 · Experience</span>
-      <h2 className="section-title">Where I've worked</h2>
+      <span className="section-label">{t.section.experience}</span>
+      <h2 className="section-title">{t.titles.experience}</h2>
       <div className="timeline">
         {experience.map((job) => (
-          <div className="timeline-item" key={job.role + job.company}>
+          <div className="timeline-item" key={job.company + job.period}>
             <span className="timeline-period">{job.period}</span>
             <div>
-              <h3 className="timeline-role">{job.role}</h3>
+              <h3 className="timeline-role">{job[lang].role}</h3>
               <span className="timeline-company">{job.company}</span>
               <ul>
-                {job.points.map((point, i) => (
+                {job[lang].points.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}
               </ul>
@@ -23,10 +27,10 @@ export default function Experience({ experience, education }) {
       {education?.length > 0 && (
         <div className="education-item">
           {education.map((ed) => (
-            <div className="timeline-item" key={ed.degree}>
+            <div className="timeline-item" key={ed.school}>
               <span className="timeline-period">{ed.period}</span>
               <div>
-                <h3 className="timeline-role">{ed.degree}</h3>
+                <h3 className="timeline-role">{ed[lang].degree}</h3>
                 <span className="timeline-company">{ed.school}</span>
               </div>
             </div>

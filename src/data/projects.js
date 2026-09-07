@@ -1,29 +1,17 @@
 export const projects = [
   {
-    title: 'Project One',
-    description:
-      'A short, punchy description of what this project does and the problem it solves for its users.',
-    tech: ['React', 'Node.js', 'PostgreSQL'],
-    repoUrl: 'https://github.com/your-username/project-one',
+    title: 'Lizenzmanagement-System',
+    tech: ['Python', 'PostgreSQL', 'REST APIs', 'React', 'TypeScript'],
+    repoUrl: '',
     demoUrl: '',
     highlight: true,
-  },
-  {
-    title: 'Project Two',
-    description:
-      'Another project — mention the impact or interesting technical challenge you solved, not just the tech list.',
-    tech: ['TypeScript', 'Express', 'Docker'],
-    repoUrl: 'https://github.com/your-username/project-two',
-    demoUrl: '',
-    highlight: false,
-  },
-  {
-    title: 'Project Three',
-    description:
-      'A smaller project, tool, or contribution worth showing. Keep descriptions to 1-2 sentences.',
-    tech: ['Python', 'Flask'],
-    repoUrl: 'https://github.com/your-username/project-three',
-    demoUrl: '',
-    highlight: false,
+    en: {
+      description:
+        'Web-based license management system that automatically monitors company licenses and notifies responsible personnel about upcoming renewals, archiving or expiration – built as graduation project and actively used in production.',
+    },
+    de: {
+      description:
+        'Webbasiertes Lizenzmanagement-System, das automatisch die Lizenzen eines Unternehmens überwacht und zuständige Mitarbeitende rechtzeitig über anstehende Verlängerungen, Archivierung oder den Ablauf benachrichtigt – entwickelt als Abschlussprojekt und im produktiven Einsatz.',
+    },
   },
 ]

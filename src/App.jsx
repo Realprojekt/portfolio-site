@@ -11,11 +11,14 @@ import { profile } from './data/profile'
 import { skillGroups } from './data/skills'
 import { projects } from './data/projects'
 import { experience, education } from './data/experience'
+import { useLanguage } from './i18n/LanguageContext'
 
 function App() {
+  const { t } = useLanguage()
+
   return (
     <>
-      <a className="skip-link" href="#main">Skip to content</a>
+      <a className="skip-link" href="#main">{t.skip}</a>
       <Nav name={profile.name} />
       <main id="main">
         <Hero profile={profile} />
