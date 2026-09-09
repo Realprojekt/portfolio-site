@@ -29,4 +29,20 @@ export const projects = [
         'Diese Website selbst. Eine zweisprachige (DE/EN) React- und Vite-Anwendung mit eigenem i18n-System, barrierefreier Umsetzung nach WCAG (Skip-Links, Fokuszustände, geprüfte Kontrastwerte), DSGVO-konformen rechtlichen Seiten und automatischem CI-Deployment über Vercel.',
     },
   },
+  {
+    title: 'Perceptron From Scratch',
+    tech: ['TypeScript', 'React', 'Canvas API'],
+    repoUrl: '',
+    demoUrl: '',
+    highlight: true,
+    demoKey: 'perceptron',
+    en: {
+      description:
+        'A single-layer perceptron implemented from scratch (no ML libraries) while learning the fundamentals of neural networks. Adjust the learning rate and batch size and watch the decision boundary converge live in the browser.',
+    },
+    de: {
+      description:
+        'Ein von Grund auf implementiertes einfaches Perzeptron (ohne ML-Bibliotheken), entstanden beim Erlernen der Grundlagen neuronaler Netze. Lernrate und Batch-Größe sind einstellbar; die Entscheidungsgrenze konvergiert live im Browser.',
+    },
+  },
 ]

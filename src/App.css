@@ -290,6 +290,83 @@
   text-decoration: underline;
 }
 
+.project-links button {
+  font: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.project-links button:hover {
+  text-decoration: underline;
+}
+
+.perceptron-demo {
+  margin-top: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.perceptron-canvas {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--bg-alt);
+}
+
+.perceptron-controls {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+}
+
+.perceptron-controls .btn {
+  padding: 8px 14px;
+  font-size: 13px;
+}
+
+.perceptron-controls .btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.perceptron-sliders {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.perceptron-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 160px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.perceptron-status {
+  margin-top: 14px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.perceptron-caption {
+  margin-top: 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
 /* Experience */
 .timeline {
   display: flex;
