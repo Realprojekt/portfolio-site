@@ -1,40 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,900;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
 :root {
-  --bg: #fafaf8;
-  --bg-alt: #f2f1ee;
-  --surface: #ffffff;
-  --border: #e6e4df;
-  --text: #1c1c1a;
-  --text-muted: #5c5b56;
-  --accent: #3d4bf5;
-  --accent-contrast: #ffffff;
-  --radius: 10px;
+  --bg: #faf7f1;
+  --bg-alt: #f1eae0;
+  --surface: #fffdfa;
+  --border: #e2d9c8;
+  --text: #211c15;
+  --text-muted: #6c6153;
+  --accent: #ad4322;
+  --accent-contrast: #fff8f0;
+  --accent-soft: rgba(173, 67, 34, 0.11);
+  --radius: 4px;
   --max-width: 920px;
-  --font-sans: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --font-mono: ui-monospace, 'SFMono-Regular', 'Cascadia Code', Consolas, monospace;
+  --font-display: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-sans: 'IBM Plex Sans', -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', 'Cascadia Code', Consolas, monospace;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --bg: #111113;
-    --bg-alt: #17171a;
-    --surface: #1a1a1d;
-    --border: #2a2a2e;
-    --text: #f1f0ed;
-    --text-muted: #a3a29c;
-    --accent: #7c85ff;
-    --accent-contrast: #0b0b0d;
+    --bg: #15110b;
+    --bg-alt: #1c1710;
+    --surface: #211a12;
+    --border: #362c1e;
+    --text: #f4ece0;
+    --text-muted: #ab9d87;
+    --accent: #e2884f;
+    --accent-contrast: #1c1006;
+    --accent-soft: rgba(226, 136, 79, 0.14);
   }
 }
 
 :root[data-theme='dark'] {
-  --bg: #111113;
-  --bg-alt: #17171a;
-  --surface: #1a1a1d;
-  --border: #2a2a2e;
-  --text: #f1f0ed;
-  --text-muted: #a3a29c;
-  --accent: #7c85ff;
-  --accent-contrast: #0b0b0d;
+  --bg: #15110b;
+  --bg-alt: #1c1710;
+  --surface: #211a12;
+  --border: #362c1e;
+  --text: #f4ece0;
+  --text-muted: #ab9d87;
+  --accent: #e2884f;
+  --accent-contrast: #1c1006;
+  --accent-soft: rgba(226, 136, 79, 0.14);
 }
 
 * {
@@ -53,7 +59,10 @@ html {
 
 body {
   margin: 0;
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20width='200'%20height='200'%3E%3Cfilter%20id='n'%3E%3CfeTurbulence%20type='fractalNoise'%20baseFrequency='0.8'%20numOctaves='2'%20stitchTiles='stitch'%20result='noise'/%3E%3CfeColorMatrix%20in='noise'%20type='matrix'%20values='0%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200%200.035%200'/%3E%3C/filter%3E%3Crect%20width='100%25'%20height='100%25'%20filter='url(%23n)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-attachment: fixed;
   color: var(--text);
   font-family: var(--font-sans);
   font-size: 16px;
@@ -62,8 +71,10 @@ body {
 }
 
 h1, h2, h3 {
-  line-height: 1.2;
-  font-weight: 700;
+  font-family: var(--font-display);
+  line-height: 1.15;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   margin: 0;
 }
 
@@ -99,7 +110,7 @@ button {
 :focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
-  border-radius: 4px;
+  border-radius: 2px;
 }
 
 .skip-link {
@@ -110,7 +121,7 @@ button {
   background: var(--accent);
   color: var(--accent-contrast);
   padding: 10px 18px;
-  border-radius: 6px;
+  border-radius: var(--radius);
   font-size: 14px;
   font-weight: 600;
   transition: top 0.15s ease;

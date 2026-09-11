@@ -91,7 +91,13 @@ export default function PerceptronDemo() {
   }, [])
 
   useEffect(() => {
-    draw()
+    // Deferred to the next animation frame: ThemeProvider's own effect sets
+    // `data-theme` on <html> in the same passive-effect flush as this one,
+    // and effect order across components isn't guaranteed, so reading
+    // getComputedStyle() synchronously here can race and capture the
+    // pre-toggle colors. rAF runs after that flush has committed to the DOM.
+    const frame = requestAnimationFrame(() => draw())
+    return () => cancelAnimationFrame(frame)
   }, [draw, theme])
 
   const trainBatch = useCallback(

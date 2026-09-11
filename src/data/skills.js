@@ -13,6 +13,6 @@ export const skillGroups = [
   },
   {
     category: { en: 'Tools & Practices', de: 'Tools & Praktiken' },
-    items: ['Git', 'Docker', 'CI/CD', 'Linux Server Administration'],
+    items: ['Git', 'Docker', 'Kubernetes', 'CI/CD', 'Linux Server Administration'],
   },
 ]

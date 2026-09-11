@@ -10,6 +10,7 @@ export const translations = {
     },
     skip: 'Skip to content',
     hero: {
+      status: 'Open to opportunities',
       viewProjects: 'View Projects',
       downloadResume: 'Download Resume',
       getInTouch: 'Get in Touch',
@@ -68,6 +69,7 @@ export const translations = {
     },
     skip: 'Zum Inhalt springen',
     hero: {
+      status: 'Offen für neue Möglichkeiten',
       viewProjects: 'Projekte ansehen',
       downloadResume: 'Lebenslauf herunterladen',
       getInTouch: 'Kontakt aufnehmen',
